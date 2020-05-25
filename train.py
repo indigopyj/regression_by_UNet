@@ -142,7 +142,7 @@ else:
     transform_test = transforms.Compose([RandomCrop(shape=(ny,nx)), Normalization(mean=0.5, std=0.5), ToTensor()])
 
     #data_dir = '/content/gdrive/My Drive/Colab Notebooks/unet_data/'
-    dataset_test = Dataset(data_dir=os.path.join(data_dir, 'test'), transform=transform_test)
+    dataset_test = Dataset(data_dir=os.path.join(data_dir, 'test'), transform=transform_test, task=task, opts=opts)
     loader_test = DataLoader(dataset_test, batch_size=batch_size, shuffle=False, num_workers=0)
 
     # 부수적인 변수들 정의
