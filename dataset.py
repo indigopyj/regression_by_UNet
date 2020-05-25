@@ -47,6 +47,7 @@ class Dataset(torch.utils.data.Dataset):
       img = img[:,:,np.newaxis]
 
     label = img
+    
 
     #artifact 이미지 만들기
     if self.task == "denoising":
