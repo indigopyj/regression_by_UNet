@@ -12,3 +12,14 @@ python3 "/content/drive/My Drive/Colab Notebooks/regression/train.py" \
 
 ```
 
+#### ** input image
+
+![input](./images/0052_input.png)
+
+#### ** label image
+
+![label](./images/0052_label.png)
+
+#### ** output image
+
+![output](./images/0052_output.png)
